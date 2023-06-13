@@ -1,0 +1,89 @@
+/*INICIO ESTILIZAÇÃO GERAL*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+    /*scroll-padding-top: 20px;*/
+}
+/*FIM ESTILIZAÇÃO GERAL*/
+
+/*INICIO SECTION SIDEBAR*/
+.sidebar{
+    width: 18%;
+    height: 100%;
+    background-color: rgb(53, 53, 53);
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+
+}
+.sidebar-absolute img{
+    width:160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid rgb(99, 99, 99);
+}
+.menu{
+    margin-top: 20%;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    color:  rgb(99, 99, 99);
+    margin-bottom: 13px;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+}
+.menu a:hover{
+    color:  rgba(143, 143, 143, 0.7);
+    font-size: 21px;
+}
+.sidebar-absolute{
+    position: absolute;
+    width: 100%;
+    top:50%; /*quando há uma posição declarada nesse caso absolute, top 50% + transform y -50%
+                temos um alinhamento central na vertical*/
+    transform: translateY(-50%);  
+}
+/*FIM SECTION SIDEBAR*/
+
+/*INICIO SECTION CONTENT*/
+.content{
+    position: absolute;
+    width: 82%;
+    height: 100vh;
+    left: 18%;
+}
+.content-absolute{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icons img{
+    width: 50px;
+    margin-right: 1%;
+}
+.infos h1{
+    font-size: 50px;
+}
+.infos h1, .icons{
+    padding: 15px 2% ;
+}
+.infos h1 span, .infos h2, .infos h3{
+    color: #353535;
+    padding: 15px 2% ;
+}
+.infos h1 span{
+    padding: 0;  
+}
+
+
+/*INICIO SECTION CONTENT*/
